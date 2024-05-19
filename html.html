@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Queue</title>
+    <link rel="stylesheet" href="css.css">
+    
+
+</head>
+<body>
+
+  <div class="background-container">
+    <div class="background"></div>
+  <div class="content">
+  <div class="header">
+    <img src="logo.png" alt="Company Logo" class="logo" style="width: 100px; height: 50px;">
+    <div class="header-right">
+      <a class="active" href="#queue">Try now</a>
+    </div>
+  </div>
+    
+  <div class="headerContainer">
+    <h2 class="headerText">Printer Queue</h2>
+  </div>
+
+
+  <div class="queueContainer">
+    <div id="queue">
+        <h2>Try me 👇</h2>
+        <div class="warning" id="warning"></div>
+        <input type="number" id="userId" placeholder="User ID">
+        <input type="password" id="password" placeholder="Password">
+        <input type="number" id="priority" placeholder="0 = Normal priority or >0 Specified priority">
+        <button onclick="addToQueue()">Add to Queue</button>
+        <button onclick="executePrint()">Execute Print</button>
+        <h3>Current Queue</h3>
+        <div id="queueList">No items in the queue.</div>
+        <h3>Executed Requests</h3>
+        <div id="executedList">Execute the queue to view executed requests.</div>
+      </div>
+  </div>
+      
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<footer class="footer">
+  <div class="footer__container bd-container">
+    <h2 class="footer__title">Operating systems Project </h2>
+    <p class="footer__description">Printer Queue</p>
+    <p class="footer__description">A project created by Charly Salameh, Kassem Faraj, Ali Nassab, Rayen Kamel</p>
+
+
+    <div class="footer__social">
+      <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+      <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
+    </div>
+    <p class="footer__copy">&#169; 2024</p>
+  </div>
+</footer>
+ 
+</div>
+</div>
+    <script src="js.js"></script>
+</body>
+</html>
